@@ -1,5 +1,6 @@
 # bugly_plugin
 [![pub package](https://img.shields.io/pub/v/tecncent_bugly_plugin?style=flat)](https://pub.dev/packages/tecncent_bugly_plugin)
+
 Flutter Bugly 插件，只集成了崩溃统计
 
 ## Bugly版本
