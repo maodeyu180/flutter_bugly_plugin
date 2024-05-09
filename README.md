@@ -5,7 +5,7 @@ Flutter Bugly 插件，只集成了崩溃统计
 ## Bugly版本
 
 Android Bugly Version : 4.1.9.3
-IOS Bugly Version : lastest version
+IOS Bugly Version : 2.6.1
 
 ## 使用
 
