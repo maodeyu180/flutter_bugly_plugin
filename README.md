@@ -15,9 +15,10 @@ IOS Bugly Version : 2.6.1
 
 ### 混淆
 Android需要配置混淆
-
+```java
 -dontwarn com.tencent.bugly.**
 -keep public class com.tencent.bugly.**{*;}
+```
 
 ### 初始化
 
