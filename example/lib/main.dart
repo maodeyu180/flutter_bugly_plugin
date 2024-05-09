@@ -7,13 +7,11 @@ import 'package:bugly_plugin/bugly_plugin.dart';
 
 void main() {
   BuglyPlugin.initBugly(
-
       BuglyConfig(
           androidAppId: "b9668c775a",
           iosAppId: "15910284fd",
-          channel: "Dz",
-          debugMode: true),
-      flutterError: (flutterError) {
+          channel: "Demo",
+          debugMode: true), flutterError: (flutterError) {
     print("receive error: $flutterError");
     print("errorinfo = ${flutterError.exception};");
     print("stack = ${flutterError.stack}");
