@@ -1,5 +1,7 @@
 # bugly_plugin
-[![pub package](https://img.shields.io/pub/v/tencent_bugly_plugin?style=flat)](https://pub.dev/packages/tencent_bugly_plugin)
+[![pub package](https://img.shields.io/pub/v/tencent_bugly_plugin?style=flat)](https://pub.dev/packages/tencent_bugly_plugin)[![stars](https://img.shields.io/github/stars/yudehai0204/flutter_bugly_plugin?style=social)](https://github.com/yudehai0204/flutter_bugly_plugin)
+
+
 
 Flutter Bugly 插件，只集成了崩溃统计
 
