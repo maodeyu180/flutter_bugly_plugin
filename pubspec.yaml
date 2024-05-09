@@ -1,6 +1,6 @@
-name: bugly_plugin
+name: tecncent_bugly_plugin
 description: "Flutter Bugly Plugin"
-version: 0.0.1
+version: 0.0.4
 homepage:
 
 environment:
