@@ -42,7 +42,6 @@ class BuglyPlugin : FlutterPlugin, MethodCallHandler {
                 val strategy = UserStrategy(context)
                 val configMap = call.arguments as Map<String, Any>
                 strategy.setAppChannel(configMap["channel"] as String)
-                Log.e("Test","$configMap")
                 CrashReport.initCrashReport(context,configMap["androidAppId"] as String, configMap["isDebug"] as Boolean,strategy)
                 result.success("")
             }
