@@ -13,6 +13,12 @@ IOS Bugly Version : 2.6.1
 
 ## 使用
 
+### 混淆
+Android需要配置混淆
+
+-dontwarn com.tencent.bugly.**
+-keep public class com.tencent.bugly.**{*;}
+
 ### 初始化
 
 任意区域调用. androidID 与 ios 为必传，其他为可选项。
