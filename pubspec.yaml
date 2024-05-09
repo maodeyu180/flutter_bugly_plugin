@@ -1,7 +1,7 @@
 name: tecncent_bugly_plugin
 description: "Flutter Bugly Plugin"
-version: 0.0.1
-homepage:
+version: 0.0.2
+homepage: https://github.com/yudehai0204/flutter_bugly_plugin
 
 environment:
   sdk: '>=3.2.3 <4.0.0'
