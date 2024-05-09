@@ -1,6 +1,6 @@
-name: tecncent_bugly_plugin
+name: tencent_bugly_plugin
 description: "Flutter Bugly Plugin"
-version: 0.0.2
+version: 0.0.1
 homepage: https://github.com/yudehai0204/flutter_bugly_plugin
 
 environment:

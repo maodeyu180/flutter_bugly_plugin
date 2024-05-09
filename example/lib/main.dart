@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:tecncent_bugly_plugin/bugly_config.dart';
-import 'package:tecncent_bugly_plugin/bugly_plugin.dart';
+import 'package:tencent_bugly_plugin/bugly_config.dart';
+import 'package:tencent_bugly_plugin/bugly_plugin.dart';
 
 void main() {
   BuglyPlugin.initBugly(
