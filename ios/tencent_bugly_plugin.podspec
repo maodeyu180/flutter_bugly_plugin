@@ -3,9 +3,9 @@
 # Run `pod lib lint bugly_plugin.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'bugly_plugin'
+  s.name             = 'tencent_bugly_plugin'
   s.version          = '0.0.1'
-  s.summary          = 'A new Flutter project.'
+  s.summary          = 'Bugly IOS Plugin'
   s.description      = <<-DESC
 A new Flutter project.
                        DESC
