@@ -25,8 +25,14 @@ class MockBuglyPluginPlatform
   void initBugly(BuglyConfig config) {
   }
 
+
+
   @override
-  void reportException(String error) {
+  void testNativeCrash() {
+  }
+
+  @override
+  void reportException(String errorMsg, String stackInfo) {
   }
 }
 
@@ -42,6 +48,6 @@ void main() {
     MockBuglyPluginPlatform fakePlatform = MockBuglyPluginPlatform();
     BuglyPluginPlatform.instance = fakePlatform;
 
-    expect(await buglyPlugin.getPlatformVersion(), '42');
+    expect(await BuglyPlugin.getPlatformVersion(), '42');
   });
 }

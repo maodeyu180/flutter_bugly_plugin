@@ -10,7 +10,7 @@ void main() {
 
       BuglyConfig(
           androidAppId: "b9668c775a",
-          iosAppId: "",
+          iosAppId: "15910284fd",
           channel: "Dz",
           debugMode: true),
       flutterError: (flutterError) {
