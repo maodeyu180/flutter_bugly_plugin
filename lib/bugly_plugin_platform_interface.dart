@@ -1,6 +1,6 @@
-import 'package:bugly_plugin/bugly_config.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
+import 'bugly_config.dart';
 import 'bugly_plugin_method_channel.dart';
 
 abstract class BuglyPluginPlatform extends PlatformInterface {

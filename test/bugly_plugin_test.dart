@@ -1,9 +1,9 @@
-import 'package:bugly_plugin/bugly_config.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:bugly_plugin/bugly_plugin.dart';
-import 'package:bugly_plugin/bugly_plugin_platform_interface.dart';
-import 'package:bugly_plugin/bugly_plugin_method_channel.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
+import 'package:tecncent_bugly_plugin/bugly_config.dart';
+import 'package:tecncent_bugly_plugin/bugly_plugin.dart';
+import 'package:tecncent_bugly_plugin/bugly_plugin_method_channel.dart';
+import 'package:tecncent_bugly_plugin/bugly_plugin_platform_interface.dart';
 
 class MockBuglyPluginPlatform
     with MockPlatformInterfaceMixin

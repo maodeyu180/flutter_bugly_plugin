@@ -9,8 +9,8 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
+import 'package:tecncent_bugly_plugin/bugly_plugin.dart';
 
-import 'package:bugly_plugin/bugly_plugin.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();

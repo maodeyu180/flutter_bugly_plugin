@@ -1,8 +1,8 @@
 import 'dart:async';
 
-import 'package:bugly_plugin/bugly_config.dart';
 import 'package:flutter/material.dart';
 
+import 'bugly_config.dart';
 import 'bugly_plugin_platform_interface.dart';
 
 
