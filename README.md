@@ -1,4 +1,4 @@
-# bugly_plugin
+# flutter_bugly_plugin
 [![pub package](https://img.shields.io/pub/v/tencent_bugly_plugin?style=flat)](https://pub.dev/packages/tencent_bugly_plugin)[![stars](https://img.shields.io/github/stars/yudehai0204/flutter_bugly_plugin?style=social)](https://github.com/yudehai0204/flutter_bugly_plugin)
 
 
@@ -12,12 +12,18 @@ Android Bugly Version : 4.1.9.3
 IOS Bugly Version : 2.6.1
 
 ## 使用
+```yaml
+dependencies:
+  tencent_bugly_plugin: ^latest
+```
+
 
 ### 混淆
 Android需要配置混淆
-
+```java
 -dontwarn com.tencent.bugly.**
 -keep public class com.tencent.bugly.**{*;}
+```
 
 ### 初始化
 
