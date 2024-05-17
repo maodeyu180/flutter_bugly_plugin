@@ -22,6 +22,7 @@ Android需要配置混淆
 ### 初始化
 
 任意区域调用. androidID 与 ios 为必传，其他为可选项。
+flutter Error 为flutter错误回调
 
 ```dart
   BuglyPlugin.initBugly(

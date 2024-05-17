@@ -9,3 +9,7 @@
 ## 0.0.3
 
 * Update README
+
+## 0.0.4
+
+* 补充注解，完善README

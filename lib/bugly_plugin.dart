@@ -11,6 +11,7 @@ class BuglyPlugin {
     return BuglyPluginPlatform.instance.getPlatformVersion();
   }
 
+  ///Initialize Bugly
   static void initBugly(BuglyConfig config,
       {Function(FlutterErrorDetails)? flutterError}) {
     WidgetsFlutterBinding.ensureInitialized();
@@ -25,10 +26,12 @@ class BuglyPlugin {
   }
 
 
+  /// report try catch exception
   static void reportException(String errorTitle,String stackInfo){
     BuglyPluginPlatform.instance.reportException(errorTitle,stackInfo);
   }
 
+  /// Test Crash collection
   static void testNativeCrash(){
     BuglyPluginPlatform.instance.testNativeCrash();
   }
