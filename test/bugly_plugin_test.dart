@@ -12,14 +12,11 @@ class MockBuglyPluginPlatform
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
 
-  @override
-  String get MethodGetVersion => throw UnimplementedError();
+  String get methodGetVersion => throw UnimplementedError();
 
-  @override
-  String get MethodInitBugly => throw UnimplementedError();
+  String get methodInitBugly => throw UnimplementedError();
 
-  @override
-  String get MethodReportException => throw UnimplementedError();
+  String get methodReportException => throw UnimplementedError();
 
   @override
   void initBugly(BuglyConfig config) {
@@ -44,7 +41,6 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    BuglyPlugin buglyPlugin = BuglyPlugin();
     MockBuglyPluginPlatform fakePlatform = MockBuglyPluginPlatform();
     BuglyPluginPlatform.instance = fakePlatform;
 
