@@ -18,6 +18,8 @@ class BuglyPlugin : FlutterPlugin, MethodCallHandler {
     val MethodInitBugly: String = "initBugly"
     val MethodReportException: String = "reportException"
     val MethodTestNativeCrash: String = "testNativeCrash"
+    val MethodSetDeviceId: String = "setDeviceId"
+
     lateinit var context: Context
 
     /// The MethodChannel that will the communication between Flutter and native Android
@@ -55,6 +57,10 @@ class BuglyPlugin : FlutterPlugin, MethodCallHandler {
                     CrashReport.testJavaCrash()
                 }).start()
 
+            }
+            MethodSetDeviceId->{
+                val configMap = call.arguments as Map<String, Any>
+                CrashReport.setDeviceId(context, configMap["userId"] as String)
             }
             else -> {
                 result.notImplemented()

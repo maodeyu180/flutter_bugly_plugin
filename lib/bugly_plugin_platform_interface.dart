@@ -32,11 +32,15 @@ abstract class BuglyPluginPlatform extends PlatformInterface {
     throw UnimplementedError('initBugly() has not been implemented.');
   }
 
-  void reportException(String errorMsg, String stackInfo){
+  void reportException(String errorMsg, String stackInfo) {
     throw UnimplementedError('reportException() has not been implemented.');
   }
 
-  void testNativeCrash(){
+  void testNativeCrash() {
     throw UnimplementedError('testNativeCrash() has not been implemented.');
+  }
+
+  void setDeviceId(String userId) {
+    throw UnimplementedError('setDeviceId() has not been implemented.');
   }
 }

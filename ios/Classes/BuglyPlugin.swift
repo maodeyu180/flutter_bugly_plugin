@@ -6,6 +6,8 @@ public class BuglyPlugin: NSObject, FlutterPlugin {
     let MethodInitBugly: String = "initBugly"
     let MethodReportException: String = "reportException"
     let MethodTestNativeCrash: String = "testNativeCrash"
+    let MethodSetDeviceId: String = "setDeviceId"
+    
     var debugMode = false
     
     public static func register(with registrar: FlutterPluginRegistrar) {
@@ -39,6 +41,10 @@ public class BuglyPlugin: NSObject, FlutterPlugin {
             }else{
                 print("not support test bugly crash")
             }
+            result("")
+        case MethodSetDeviceId:
+            let configMap = call.arguments as! Dictionary<String,Any>
+            Bugly.setUserIdentifier(configMap["userId"] as! String)
             result("")
         default:
             result(FlutterMethodNotImplemented)

@@ -8,7 +8,6 @@ import 'package:tencent_bugly_plugin/bugly_plugin_platform_interface.dart';
 class MockBuglyPluginPlatform
     with MockPlatformInterfaceMixin
     implements BuglyPluginPlatform {
-
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
 
@@ -19,18 +18,16 @@ class MockBuglyPluginPlatform
   String get methodReportException => throw UnimplementedError();
 
   @override
-  void initBugly(BuglyConfig config) {
-  }
-
-
+  void initBugly(BuglyConfig config) {}
 
   @override
-  void testNativeCrash() {
-  }
+  void testNativeCrash() {}
 
   @override
-  void reportException(String errorMsg, String stackInfo) {
-  }
+  void reportException(String errorMsg, String stackInfo) {}
+
+  @override
+  void setDeviceId(String userId) {}
 }
 
 void main() {
