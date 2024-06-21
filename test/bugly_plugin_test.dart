@@ -27,7 +27,7 @@ class MockBuglyPluginPlatform
   void reportException(String errorMsg, String stackInfo) {}
 
   @override
-  void setDeviceId(String userId) {}
+  void setUserId(String userId) {}
 }
 
 void main() {

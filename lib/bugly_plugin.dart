@@ -36,7 +36,7 @@ class BuglyPlugin {
   }
 
   // set userId
-  static void setDeviceId(String userId) {
-    BuglyPluginPlatform.instance.setDeviceId(userId);
+  static void setUserId(String userId) {
+    BuglyPluginPlatform.instance.setUserId(userId);
   }
 }

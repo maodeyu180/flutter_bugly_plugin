@@ -10,7 +10,7 @@ class MethodChannelBuglyPlugin extends BuglyPluginPlatform {
   final String methodInitBugly = 'initBugly';
   final String methodReportException = 'reportException';
   final String methodTestNativeCrash = "testNativeCrash";
-  final String methodSetDeviceId = "setDeviceId";
+  final String methodSetUserId = "setUserId";
 
   /// The method channel used to interact with the native platform.
   @visibleForTesting
@@ -42,7 +42,7 @@ class MethodChannelBuglyPlugin extends BuglyPluginPlatform {
   }
 
   @override
-  void setDeviceId(String userId) {
-    methodChannel.invokeMethod(methodSetDeviceId, {"userId": userId});
+  void setUserId(String userId) {
+    methodChannel.invokeMethod(methodSetUserId, {"userId": userId});
   }
 }

@@ -16,5 +16,4 @@
 
 ## 0.0.5
 
-- Add setDeviceId for Android
-- Add setDeviceId for iOS
+- Add setUserId for iOS,Android

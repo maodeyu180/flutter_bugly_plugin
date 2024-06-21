@@ -6,7 +6,7 @@ public class BuglyPlugin: NSObject, FlutterPlugin {
     let MethodInitBugly: String = "initBugly"
     let MethodReportException: String = "reportException"
     let MethodTestNativeCrash: String = "testNativeCrash"
-    let MethodSetDeviceId: String = "setDeviceId"
+    let MethodSetUserId: String = "setUserId"
     
     var debugMode = false
     
@@ -42,7 +42,7 @@ public class BuglyPlugin: NSObject, FlutterPlugin {
                 print("not support test bugly crash")
             }
             result("")
-        case MethodSetDeviceId:
+        case MethodSetUserId:
             let configMap = call.arguments as! Dictionary<String,Any>
             Bugly.setUserIdentifier(configMap["userId"] as! String)
             result("")

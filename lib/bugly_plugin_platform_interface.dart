@@ -40,7 +40,7 @@ abstract class BuglyPluginPlatform extends PlatformInterface {
     throw UnimplementedError('testNativeCrash() has not been implemented.');
   }
 
-  void setDeviceId(String userId) {
-    throw UnimplementedError('setDeviceId() has not been implemented.');
+  void setUserId(String userId) {
+    throw UnimplementedError('setUserId() has not been implemented.');
   }
 }

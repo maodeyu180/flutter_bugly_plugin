@@ -18,7 +18,7 @@ class BuglyPlugin : FlutterPlugin, MethodCallHandler {
     val MethodInitBugly: String = "initBugly"
     val MethodReportException: String = "reportException"
     val MethodTestNativeCrash: String = "testNativeCrash"
-    val MethodSetDeviceId: String = "setDeviceId"
+    val MethodSetUserId: String = "setUserId"
 
     lateinit var context: Context
 
@@ -58,9 +58,9 @@ class BuglyPlugin : FlutterPlugin, MethodCallHandler {
                 }).start()
 
             }
-            MethodSetDeviceId->{
+            MethodSetUserId->{
                 val configMap = call.arguments as Map<String, Any>
-                CrashReport.setDeviceId(context, configMap["userId"] as String)
+                CrashReport.setUserId(context, configMap["userId"] as String)
             }
             else -> {
                 result.notImplemented()
