@@ -1,6 +1,6 @@
 name: tencent_bugly_plugin
 description: "Bugly Flutter Plugin, only support Android and iOS. Config BuglyId exception collection can be implemented,Support channel"
-version: 0.0.4
+version: 0.0.5
 homepage: https://github.com/yudehai0204/flutter_bugly_plugin
 
 environment:

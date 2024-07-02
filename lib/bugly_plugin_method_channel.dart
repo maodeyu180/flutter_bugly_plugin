@@ -10,6 +10,8 @@ class MethodChannelBuglyPlugin extends BuglyPluginPlatform {
   final String methodInitBugly = 'initBugly';
   final String methodReportException = 'reportException';
   final String methodTestNativeCrash = "testNativeCrash";
+  final String methodSetUserId = "setUserId";
+
   /// The method channel used to interact with the native platform.
   @visibleForTesting
   final methodChannel = const MethodChannel('bugly_plugin');
@@ -24,17 +26,23 @@ class MethodChannelBuglyPlugin extends BuglyPluginPlatform {
   /// init tencent bugly
   @override
   void initBugly(BuglyConfig config) {
-    methodChannel.invokeMethod(methodInitBugly,config.toMap());
+    methodChannel.invokeMethod(methodInitBugly, config.toMap());
   }
 
   /// custom report exception
   @override
   void reportException(String errorMsg, String stackInfo) {
-    methodChannel.invokeMethod(methodReportException,{"errorMsg": errorMsg, "stackInfo": stackInfo});
+    methodChannel.invokeMethod(
+        methodReportException, {"errorMsg": errorMsg, "stackInfo": stackInfo});
   }
 
   @override
-  void testNativeCrash(){
+  void testNativeCrash() {
     methodChannel.invokeMethod(methodTestNativeCrash);
+  }
+
+  @override
+  void setUserId(String userId) {
+    methodChannel.invokeMethod(methodSetUserId, {"userId": userId});
   }
 }
